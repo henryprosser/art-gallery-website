@@ -3,9 +3,10 @@ export default function Hero() {
     <section>
       <img
         src="src/assets/mobile/image-hero@2x.jpg"
-        alt="Hero"
+        alt="Art Gallery Picture"
         className="w-full h-auto object-cover"
       />
+      {/* Gallery Info */}
       <div className="flex flex-col gap-[var(--spacing-32)] mt-[var(--spacing-32)] mr-[var(--spacing-16)] ml-[var(--spacing-16)]">
         <h1 className="text-preset-1">MODERN ART GALLERY</h1>
         <p className="text-preset-7 text-grey-700">
