@@ -1,13 +1,19 @@
 export default function Hero() {
   return (
-    <section>
-      <img
-        src="src/assets/mobile/image-hero@2x.jpg"
-        alt="Art Gallery Picture"
-        className="w-full h-auto object-cover"
-      />
+    <section className="md:flex md:relative">
+      <picture>
+        <source
+          media="(min-width: 768px)" // md breakpoint is usually 768px
+          srcSet="src/assets/tablet/image-hero@2x.jpg"
+        />
+        <img
+          src="src/assets/mobile/image-hero@2x.jpg"
+          alt="Art Gallery Exhibition"
+          className="w-full h-auto object-cover md:w-[437px]"
+        />
+      </picture>
       {/* Gallery Info */}
-      <div className="flex flex-col gap-[var(--spacing-32)] mt-[var(--spacing-32)] mr-[var(--spacing-16)] ml-[var(--spacing-16)]">
+      <div className="flex flex-col gap-[var(--spacing-32)] mt-[var(--spacing-32)] mr-[var(--spacing-16)] ml-[var(--spacing-16)] md:absolute md:top-1/2 md:left-[389px] md:translate-y-[-50%] md:mx-0 md:my-0 md:mr-[var(--spacing-40)] md:gap-[var(--spacing-48)]">
         <h1 className="text-preset-1">MODERN ART GALLERY</h1>
         <p className="text-preset-7 text-grey-700">
           The arts in the collection of the Modern Art Gallery all started from
