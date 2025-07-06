@@ -3,7 +3,7 @@ export default function Hero() {
     <section className="md:flex md:relative">
       <picture>
         <source
-          media="(min-width: 768px)" // md breakpoint is usually 768px
+          media="(min-width: 768px)" // md breakpoint is 768px
           srcSet="src/assets/tablet/image-hero@2x.jpg"
         />
         <img
