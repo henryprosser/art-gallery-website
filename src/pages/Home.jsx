@@ -4,8 +4,8 @@ import Footer from "../components/Home/Footer.jsx";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-[100px] md:gap-[120px]">
-      <main className="flex flex-col gap-[100px] md:gap-[120px]">
+    <div className="flex flex-col gap-[100px] md:gap-[120px] lg:gap-[180px]">
+      <main className="flex flex-col gap-[100px] md:gap-[120px] lg:gap-[180px]">
         <Hero />
         <Gallery />
       </main>

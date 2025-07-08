@@ -2,7 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 @import "tailwindcss";
 
+/* * {
+  outline: 1px solid red;
+} */
+
 @theme {
+  /* Custom breakpoints */
+  --breakpoint-lg: 90rem; /* 1440px */
+
   /* Colors */
   --color-grey-900: #151515;
   --color-grey-700: #444444;
@@ -162,5 +169,15 @@
   .text-preset-3 {
     font-size: 60px;
     line-height: 100%;
+  }
+}
+
+.text-desktop-lg {
+  @media (min-width: 1440px) {
+    font-family: var(--font-preset-5-font-family);
+    font-size: var(--font-preset-5-font-size);
+    line-height: var(--font-preset-5-line-height);
+    font-weight: var(--font-preset-5-font-weight);
+    letter-spacing: var(--font-preset-5-letter-spacing);
   }
 }
