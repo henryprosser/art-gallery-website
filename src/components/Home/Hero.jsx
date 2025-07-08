@@ -29,11 +29,11 @@ export default function Hero() {
           a spark of inspiration. Will these pieces inspire you? Visit us and
           find out.
         </p>
-        <button className="flex">
-          <span className="bg-grey-900 text-white px-[33.5px] py-[26px] text-preset-6">
+        <button className="flex group w-max focus:outline-[4px] focus:outline-gold-500 focus:outline-offset-[3px]">
+          <span className="bg-grey-900 text-white px-[33.5px] py-[26px] text-preset-6 transition-colors duration-300 ease-in-out cursor-pointer group-hover:bg-gold-500">
             OUR LOCATION
           </span>
-          <span className="bg-gold-500 flex items-center justify-center">
+          <span className="bg-gold-500 flex items-center justify-center transition-colors duration-300 ease-in-out cursor-pointer group-hover:bg-grey-900">
             <img
               src="src/assets/icon-arrow-right.svg"
               className="p-[24px]"
