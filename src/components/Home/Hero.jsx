@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Hero() {
   return (
     <section className="md:flex md:relative">
@@ -29,7 +31,11 @@ export default function Hero() {
           a spark of inspiration. Will these pieces inspire you? Visit us and
           find out.
         </p>
-        <button className="flex group w-max focus:outline-[4px] focus:outline-gold-500 focus:outline-offset-[3px]">
+        <Link
+          to="/location"
+          className="flex group w-max focus-visible:outline-[4px] focus-visible:outline-gold-500 focus-visible:outline-offset-[3px]"
+          aria-label="Go to our location page"
+        >
           <span className="bg-grey-900 text-white px-[33.5px] py-[26px] text-preset-6 transition-colors duration-300 ease-in-out cursor-pointer group-hover:bg-gold-500">
             OUR LOCATION
           </span>
@@ -39,7 +45,7 @@ export default function Hero() {
               className="p-[24px]"
             ></img>
           </span>
-        </button>
+        </Link>
       </div>
     </section>
   );
