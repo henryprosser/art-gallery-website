@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="flex flex-col gap-[var(--spacing-40)] px-[40px] py-[48px] bg-black text-white md:flex-row md:items-start md:gap-[138px] lg:px-[165px] lg:py-[80px] lg:items-center lg:gap-[150px]">
+    <footer className="flex flex-col gap-[var(--spacing-40)] px-[40px] py-[48px] bg-grey-900 text-white md:flex-row md:items-start md:gap-[138px] lg:px-[165px] lg:py-[80px] lg:items-center lg:gap-[150px]">
       <div className="flex flex-col gap-[var(--spacing-40)] md:flex-row md:gap-[var(--spacing-64)] md:w-[450px] md:h-[100px] md:grow-2 lg:items-center lg:gap-[140px]">
         <img
           src="src/assets/logo-light.svg"

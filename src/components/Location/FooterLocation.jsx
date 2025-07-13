@@ -1,20 +1,20 @@
 export default function FooterLocation() {
   return (
-    <footer className="flex flex-col gap-[var(--spacing-40)] px-[16px] py-[48px] bg-gold-500 text-black md:flex-row md:items-start md:px-[40px] md:py-[48px] md:gap-[138px] lg:px-[165px] lg:py-[80px] lg:items-center lg:gap-[150px]">
+    <footer className="flex flex-col gap-[var(--spacing-40)] px-[16px] py-[48px] bg-gold-500 text-grey-900 md:flex-row md:items-start md:px-[40px] md:py-[48px] md:gap-[138px] lg:px-[165px] lg:py-[80px] lg:items-center lg:gap-[150px]">
       <div className="flex flex-col gap-[var(--spacing-40)] md:flex-row md:gap-[var(--spacing-64)] md:w-[450px] md:h-[100px] md:grow-2 lg:items-center lg:gap-[140px]">
         <img
           src="src/assets/logo-dark.svg"
           alt="Modern Art Gallery"
           className="w-[110px] h-auto md:h-[40px] lg:w-[160px] lg:h-[60px]"
         ></img>
-        <p className="text-preset-7 text-black">
+        <p className="text-preset-7 text-grey-900">
           The Modern Art Gallery is free to all visitors and open seven days a
           week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
         </p>
       </div>
       <div className="flex gap-[var(--spacing-20)] md:ml-auto">
         <div
-          className="w-20 h-20 cursor-pointer text-black transition-colors duration-200 ease-in-out hover:text-white focus:outline-[3px] focus:outline-white focus:outline-offset-[3px]"
+          className="w-20 h-20 cursor-pointer text-grey-900 transition-colors duration-200 ease-in-out hover:text-white focus:outline-[3px] focus:outline-white focus:outline-offset-[3px]"
           aria-label="Facebook icon"
           role="img"
         >
@@ -29,7 +29,7 @@ export default function FooterLocation() {
         </div>
 
         <div
-          className="w-20 h-20 cursor-pointer text-black transition-colors duration-200 ease-in-out hover:text-white focus:outline-[3px] focus:outline-white focus:outline-offset-[3px]"
+          className="w-20 h-20 cursor-pointer text-grey-900 transition-colors duration-200 ease-in-out hover:text-white focus:outline-[3px] focus:outline-white focus:outline-offset-[3px]"
           aria-label="Instagram icon"
           role="img"
         >
@@ -44,7 +44,7 @@ export default function FooterLocation() {
         </div>
 
         <div
-          className="w-20 h-20 cursor-pointer text-black transition-colors duration-200 ease-in-out hover:text-white focus:outline-[3px] focus:outline-white focus:outline-offset-[3px]"
+          className="w-20 h-20 cursor-pointer text-grey-900 transition-colors duration-200 ease-in-out hover:text-white focus:outline-[3px] focus:outline-white focus:outline-offset-[3px]"
           aria-label="Twitter icon"
           role="img"
         >

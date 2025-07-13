@@ -69,7 +69,7 @@ export default function Gallery() {
           </div>
 
           {/* Inspiration Details */}
-          <div className="flex flex-col gap-[var(--spacing-24)] bg-black px-[24px] py-[48px] md:px-[32px] md:py-[80px] md:col-start-2 md:row-start-2 md:justify-center lg:px-[48px] lg:py-[64px] lg:gap-[var(--spacing-32)]">
+          <div className="flex flex-col gap-[var(--spacing-24)] bg-grey-900 px-[24px] py-[48px] md:px-[32px] md:py-[80px] md:col-start-2 md:row-start-2 md:justify-center lg:px-[48px] lg:py-[64px] lg:gap-[var(--spacing-32)]">
             <h2 className="text-preset-3 text-white">COME & BE INSPIRED</h2>
             <p className="text-preset-7 text-white text-desktop-lg">
               We're excited to welcome you to our gallery and see how our
