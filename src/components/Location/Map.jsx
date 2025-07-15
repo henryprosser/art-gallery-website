@@ -1,24 +1,42 @@
 import { Link } from "react-router-dom";
+import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
+import customMapStyle from "../../styles/customMapStyle";
+import customMarker from "../../assets/icon-location.svg";
+
+const center = {
+  lat: 41.480472,
+  lng: -71.310969,
+};
 
 export default function Map() {
+  const { isLoaded, loadError } = useLoadScript({
+    googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY,
+  });
+
+  if (loadError) return <div>Error loading map</div>;
+  if (!isLoaded) return <div>Loading map...</div>;
+
   return (
     <section>
-      <div className="relative">
-        <picture>
-          <source
-            media="(min-width: 1440px)" // lg breakpoint
-            srcSet="src/assets/desktop/image-map@2x.png"
+      <div className="relative w-full h-[550px] md:h-[600px] lg:h-[600px]">
+        <GoogleMap
+          mapContainerStyle={{ width: "100%", height: "100%" }}
+          center={center}
+          zoom={16}
+          options={{
+            styles: customMapStyle,
+            disableDefaultUI: true,
+            zoomControl: true,
+          }}
+        >
+          <Marker
+            position={center}
+            icon={{
+              url: customMarker,
+              scaledSize: new window.google.maps.Size(41, 55),
+            }}
           />
-          <source
-            media="(min-width: 768px)" // md breakpoint
-            srcSet="src/assets/tablet/image-map@2x.png"
-          />
-          <img
-            src="src/assets/mobile/image-map@2x.png"
-            alt="Map showing the location of Modern Art Gallery"
-            className="w-full h-auto object-cover"
-          />
-        </picture>
+        </GoogleMap>
         <Link
           to="/"
           className="absolute overflow-hidden flex group w-max top-[10px] left-[10px] focus-visible:outline-[4px] focus-visible:outline-gold-500 focus-visible:outline-offset-[3px] md:top-[16px] md:left-[39px] lg:left-[156px]"
