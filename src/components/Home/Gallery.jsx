@@ -4,7 +4,7 @@ export default function Gallery() {
       <div className="flex flex-col gap-[var(--spacing-32)] md:gap-[var(--spacing-12)] lg:gap-[var(--spacing-32)]">
         {/* Gallery section */}
         <div className="flex flex-col gap-[var(--spacing-24)] md:grid md:grid-cols-[0.36fr_0.64fr] md:items-center md:gap-[68px] lg:gap-[125px]">
-          <picture className="md:order-2">
+          <picture className="md:order-2 overflow-hidden">
             <source
               media="(min-width: 1440px)" // lg breakpoint
               srcSet="src/assets/desktop/image-grid-1@2x.jpg"
@@ -16,7 +16,7 @@ export default function Gallery() {
             <img
               src="src/assets/mobile/image-grid-1@2x.jpg"
               alt="Art Gallery Exhibition"
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover transition duration-600 ease-in-out transform hover:scale-105 hover:saturate-200"
             />
           </picture>
 
@@ -33,7 +33,7 @@ export default function Gallery() {
 
         {/* Inspiration Section */}
         <div className="flex flex-col gap-[var(--spacing-16)] md:grid md:grid-cols-[0.59fr_0.41fr] md:grid-rows-[0.44fr_0.56fr] md:gap-[var(--spacing-12)] lg:gap-[30px] lg:grid-rows-[0.45fr_0.55fr]">
-          <div className="md:row-span-2">
+          <div className="md:row-span-2 overflow-hidden">
             <picture>
               <source
                 media="(min-width: 1440px)" // lg breakpoint
@@ -46,11 +46,11 @@ export default function Gallery() {
               <img
                 src="src/assets/mobile/image-grid-2@2x.jpg"
                 alt="Art Gallery Seat with a Picture"
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover transition duration-600 ease-in-out transform hover:scale-105 hover:saturate-200"
               />
             </picture>
           </div>
-          <div className="md:col-start-2 md:row-start-1">
+          <div className="md:col-start-2 md:row-start-1 overflow-hidden">
             <picture>
               <source
                 media="(min-width: 1440px)" // lg breakpoint
@@ -63,13 +63,13 @@ export default function Gallery() {
               <img
                 src="src/assets/mobile/image-grid-3@2x.jpg"
                 alt="People exploring the Art Gallery"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition duration-600 ease-in-out transform hover:scale-105 hover:saturate-200"
               />
             </picture>
           </div>
 
           {/* Inspiration Details */}
-          <div className="flex flex-col gap-[var(--spacing-24)] bg-black px-[24px] py-[48px] md:px-[32px] md:py-[80px] md:col-start-2 md:row-start-2 md:justify-center lg:px-[48px] lg:py-[64px] lg:gap-[var(--spacing-32)]">
+          <div className="flex flex-col gap-[var(--spacing-24)] bg-grey-900 px-[24px] py-[48px] md:px-[32px] md:py-[80px] md:col-start-2 md:row-start-2 md:justify-center lg:px-[48px] lg:py-[64px] lg:gap-[var(--spacing-32)]">
             <h2 className="text-preset-3 text-white">COME & BE INSPIRED</h2>
             <p className="text-preset-7 text-white text-desktop-lg">
               We're excited to welcome you to our gallery and see how our
