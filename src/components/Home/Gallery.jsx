@@ -7,14 +7,14 @@ export default function Gallery() {
           <picture className="md:order-2 overflow-hidden">
             <source
               media="(min-width: 1440px)" // lg breakpoint
-              srcSet="src/assets/desktop/image-grid-1@2x.jpg"
+              srcSet="/assets/desktop/image-grid-1@2x.jpg"
             />
             <source
               media="(min-width: 768px)" // md breakpoint
-              srcSet="src/assets/tablet/image-grid-1@2x.jpg"
+              srcSet="/assets/tablet/image-grid-1@2x.jpg"
             />
             <img
-              src="src/assets/mobile/image-grid-1@2x.jpg"
+              src="/assets/mobile/image-grid-1@2x.jpg"
               alt="Art Gallery Exhibition"
               className="w-full h-auto object-cover transition duration-600 ease-in-out transform hover:scale-105 hover:saturate-200"
             />
@@ -37,14 +37,14 @@ export default function Gallery() {
             <picture>
               <source
                 media="(min-width: 1440px)" // lg breakpoint
-                srcSet="src/assets/desktop/image-grid-2@2x.jpg"
+                srcSet="/assets/desktop/image-grid-2@2x.jpg"
               />
               <source
                 media="(min-width: 768px)" // md breakpoint
-                srcSet="src/assets/tablet/image-grid-2@2x.jpg"
+                srcSet="/assets/tablet/image-grid-2@2x.jpg"
               />
               <img
-                src="src/assets/mobile/image-grid-2@2x.jpg"
+                src="/assets/mobile/image-grid-2@2x.jpg"
                 alt="Art Gallery Seat with a Picture"
                 className="w-full h-auto object-cover transition duration-600 ease-in-out transform hover:scale-105 hover:saturate-200"
               />
@@ -54,14 +54,14 @@ export default function Gallery() {
             <picture>
               <source
                 media="(min-width: 1440px)" // lg breakpoint
-                srcSet="src/assets/desktop/image-grid-3@2x.jpg"
+                srcSet="/assets/desktop/image-grid-3@2x.jpg"
               />
               <source
                 media="(min-width: 768px)" // md breakpoint
-                srcSet="src/assets/tablet/image-grid-3@2x.jpg"
+                srcSet="/assets/tablet/image-grid-3@2x.jpg"
               />
               <img
-                src="src/assets/mobile/image-grid-3@2x.jpg"
+                src="/assets/mobile/image-grid-3@2x.jpg"
                 alt="People exploring the Art Gallery"
                 className="w-full h-full object-cover transition duration-600 ease-in-out transform hover:scale-105 hover:saturate-200"
               />

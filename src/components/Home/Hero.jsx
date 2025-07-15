@@ -21,14 +21,14 @@ export default function Hero() {
       >
         <source
           media="(min-width: 1440px)" // lg breakpoint
-          srcSet="src/assets/desktop/image-hero@2x.jpg"
+          srcSet="/assets/desktop/image-hero@2x.jpg"
         />
         <source
           media="(min-width: 768px)" // md breakpoint
-          srcSet="src/assets/tablet/image-hero@2x.jpg"
+          srcSet="/assets/tablet/image-hero@2x.jpg"
         />
         <img
-          src="src/assets/mobile/image-hero@2x.jpg"
+          src="/assets/mobile/image-hero@2x.jpg"
           alt="Art Gallery Exhibition"
           className="w-full h-auto object-cover md:w-[437px] lg:w-full overflow-hidden"
         />
@@ -69,7 +69,7 @@ export default function Hero() {
             </span>
             <span className="relative z-10 flex items-center justify-center cursor-pointer text-white transition-colors duration-300 ease-in-out">
               <img
-                src="src/assets/icon-arrow-right.svg"
+                src="/assets/icon-arrow-right.svg"
                 className="p-[24px]"
                 alt=""
               />

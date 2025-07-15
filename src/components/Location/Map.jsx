@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
 import customMapStyle from "../../styles/customMapStyle";
-import customMarker from "../../assets/icon-location.svg";
+import customMarker from "/assets/icon-location.svg";
 
 const center = {
   lat: 41.480472,
@@ -54,7 +54,7 @@ export default function Map() {
 
           <span className="relative z-10 flex items-center justify-center cursor-pointer text-white transition-colors duration-300 ease-in-out">
             <img
-              src="src/assets/icon-arrow-left.svg"
+              src="/assets/icon-arrow-left.svg"
               className="p-[24px]"
               alt=""
             />
