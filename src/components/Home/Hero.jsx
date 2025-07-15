@@ -51,17 +51,28 @@ export default function Hero() {
           </p>
           <Link
             to="/location"
-            className="flex group w-max focus-visible:outline-[4px] focus-visible:outline-gold-500 focus-visible:outline-offset-[3px]"
+            className="relative overflow-hidden flex group w-max focus-visible:outline-[4px] focus-visible:outline-gold-500 focus-visible:outline-offset-[3px]"
             aria-label="Go to our location page"
           >
-            <span className="bg-grey-900 text-white px-[33.5px] py-[26px] text-preset-6 transition-colors duration-300 ease-in-out cursor-pointer group-hover:bg-gold-500">
+            <div className="absolute inset-0 flex">
+              <div className="bg-gold-500 flex-1"></div>
+              <div className="bg-grey-900 w-[58px]"></div>
+            </div>
+
+            <div className="absolute inset-0 flex transition-transform duration-300 ease-in-out transform translate-x-0 group-hover:-translate-x-full">
+              <div className="bg-grey-900 flex-1"></div>
+              <div className="bg-gold-500 w-[58px]"></div>
+            </div>
+
+            <span className="relative z-10 px-[33.5px] py-[26px] text-preset-6 cursor-pointer text-white group-hover:text-grey-900 transition-colors duration-300 ease-in-out">
               OUR LOCATION
             </span>
-            <span className="bg-gold-500 flex items-center justify-center transition-colors duration-300 ease-in-out cursor-pointer group-hover:bg-grey-900">
+            <span className="relative z-10 flex items-center justify-center cursor-pointer text-white transition-colors duration-300 ease-in-out">
               <img
                 src="src/assets/icon-arrow-right.svg"
                 className="p-[24px]"
-              ></img>
+                alt=""
+              />
             </span>
           </Link>
         </motion.div>
