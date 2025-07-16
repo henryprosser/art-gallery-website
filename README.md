@@ -1,12 +1,47 @@
-# React + Vite
+# Art Gallery Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Design preview for the Art Gallery Website coding challenge](public/assets/desktop-design.png)
 
-Currently, two official plugins are available:
+## Welcome! 👋
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Thanks for checking out this front-end coding project.
 
-## Expanding the ESLint configuration
+## Table of contents
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [Overview](#overview)
+  - [The project](#the-project)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [Continued development](#continued-development)
+
+## Overview
+
+### The project
+
+Users should be able to:
+
+- View the optimal layout for each page depending on their device's screen size
+- See hover states for all interactive elements throughout the site
+- **Bonus**: Use [Leaflet JS](https://leafletjs.com/) or [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/overview) to create an interactive location map with custom location pin
+
+### Links
+
+- Live Site URL: [Here](https://art-gallery-website-iota.vercel.app/)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Tailwind](https://tailwindcss.com/) - CSS framework
+- [Motion](https://motion.dev/) - Animation library
+- [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/overview) - Google Maps API
+
+### Continued development
+
+TBD 🚀
